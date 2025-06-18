@@ -1032,7 +1032,7 @@ function createSongCard(song) {
 
   // 標題
   const title = document.createElement('h3');
-  title.className = 'text-lg font-bold text-gray-800 pr-8 line-clamp-1';
+  title.className = 'text-lg font-bold text-gray-800 pr-1 line-clamp-1';
   title.textContent = song.title || '';
   card.appendChild(title);
 
@@ -1094,13 +1094,13 @@ function createSongCard(song) {
 
   // 複製按鈕
   const copyButtonContainer = document.createElement('div');
-  copyButtonContainer.className = 'absolute top-5 right-3';
+  copyButtonContainer.className = 'absolute top-6 right-3';
 
   const copyButton = document.createElement('button');
   copyButton.className = 'p-2 bg-rose-100 hover:bg-rose-200 text-[#BEBEBE] rounded-full focus:outline-none shadow-md transition-all duration-200 hover:-translate-y-1 active:scale-95';
 
   const copyIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  copyIcon.setAttribute('class', 'h-9 w-9');
+  copyIcon.setAttribute('class', 'h-8 w-8');
   copyIcon.setAttribute('fill', 'none');
   copyIcon.setAttribute('viewBox', '0 0 24 24');
   copyIcon.setAttribute('stroke', 'currentColor');
